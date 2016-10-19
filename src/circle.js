@@ -1,15 +1,11 @@
-document.getElementById("addCircle").onclick = addCircle;
+document.getElementById('addCircle').onclick = addCircle;
 
 
-function getRandomXPosition(circle, radius) {
-    circle.style.top = Math.floor(Math.random() * (window.innerHeight - 2 * radius)) + 'px';
-}
 function addCircle() {
     var container = document.getElementById('container');
     var circle = document.createElement('div');
     var radius = getRandomRadius();
 
-    circle.className = "circle";
     circle.style.width = 2 * radius + 'px';
     circle.style.height = 2 * radius + 'px';
     circle.style.borderRadius = radius + 'px';
